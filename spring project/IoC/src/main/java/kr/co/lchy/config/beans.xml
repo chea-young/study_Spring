@@ -5,7 +5,7 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- id가 다음과 같은 객체를 가지고 만들겠다. -->
-	<bean id='hello' class='kr.co.lchy.beans.HelloWorldEn' />
+	<bean id='t1' class='kr.co.lchy.beans.TestBean'/>
 </beans>
 	
 	
