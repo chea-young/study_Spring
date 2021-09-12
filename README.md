@@ -72,11 +72,16 @@ Spring을 공부한 것을 정리하는 Repository
 - bean 객체의 생명주기
     - Singleton인 경우 xml 파일을 로딩 할 떄 객체가 생성된다.
     - Singleton이고 lazy-init 속성이 true인 경우 getBean 메서드를 사용할 때 객체가 생성된다.
-    - Prototype 일 경우 getBean 메서드를 사용할 때 객체가 생성되낟.
+    - Prototype 일 경우 getBean 메서드를 사용할 때 객체가 생성된다.
 
 ### POJO(Plain Old Java Object) Class
 - 자바 모델이나, 기능, 프레임워크 등에 따르지 않고 독립적이며 단순한 기능만을 가진 객체이다.
 - 자바에서는 이러한 객체를 Bean라고 부른다.
+
+### BeanPostProcessor
+- BeanPostProcessor 인터페이스를 구현한 클래스를 정의하면 Bean 객체를 생성할 때 호출될 init 메서드 호출을 가로채 다른 메서드를 호출 할 수 있도록 할 수 있다.
+- postProcessBeforeInitialization: init-method에 지정된 메서드가 호출되기 전에 호출된다.
+- postProcessAfterInitialization: init-method에 지정된 메서드가 호출된 후에 호출된다.
 
 ### A. 자바 프로젝트
 - 문제점
