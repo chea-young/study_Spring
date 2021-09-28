@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="default_init" default-destroy-method="default_destory"
+	>
+	
+
+	<bean id="t1" class="kr.co.lchy.beans.TestBeanLifeCycle01" lazy-init="true" init-method="bean1_init" destroy-method="bean1_destroy"/>
+	<bean id="t2" class="kr.co.lchy.beans.TestBeanLifeCycle02" lazy-init="true"/>
+	<bean id="t3" class="kr.co.lchy.beans.TestBeanLifeCycle03" lazy-init="true" init-method="bean3_init" destroy-method="bean3_destroy"/>
+	<bean id="t4" class="kr.co.lchy.beans.TestBeanLifeCycle04" lazy-init="true"  />
+</beans>
+	
+	

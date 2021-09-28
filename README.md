@@ -33,6 +33,15 @@ Spring을 공부한 것을 정리하는 Repository
 - xml에 객체를 생성 위한 코드를 작성한다.
 - IoC 컨테이너를 이용하여 bean 객체들을 관리한다.
 
+### Spring Framework 기능
+- 객체 생성과 소멸 시 호출될 메서드 등록
+    - 객체가 생성될 때 생성자가 호출된 이후 init-method에 설정한 메서드가 자동으로 호출되고 IoC 컨테이너의 close 메서드를 호출하면 객체가 소멸되며 destroy-method에 설정한 메서드가 자동으로 호출된다.
+    - init-method와 destroy-method가 설정되어 있지 않다면 default-init-method와 default-destory-method에 설정되어 있는 메서드를 호출한다.
+    - init-method; 생성자 호출 이후 자동으로 호출된다.
+    - destory-method: 객체 소멸될 때 자동으로 호출된다. -> [ctx.close()일 때 소멸]
+    - default-init-method: init- method를 설정하지 않은 경우 자동으로 호출된다.
+    - default-destory-method: destory-method를 설정하지 않은 경우 자동으로 호출된다.
+
 ### Maven
 - 자바 프로젝트의 빌드를 자동으로 해주는 도구이다.
 - XML에 작성한 프로젝트 정보를 바탕으로 컴파일하고 라이브러리를 연결하는 등 작업을 해주는 도구이다.
@@ -60,6 +69,10 @@ Spring을 공부한 것을 정리하는 Repository
         - scope: 객체의 범위를 설정한다.
             - singleton: 객체를 하나만 생성해서 사용한다.
             - Prototype: xml 로딩할 때 객체가 생성되지 않고 getBean 메소드로 객체를 호출할 때 마다 새로운 객체를 생성한다.
+- bean 객체의 생명주기
+    - Singleton인 경우 xml 파일을 로딩 할 떄 객체가 생성된다.
+    - Singleton이고 lazy-init 속성이 true인 경우 getBean 메서드를 사용할 때 객체가 생성된다.
+    - Prototype 일 경우 getBean 메서드를 사용할 때 객체가 생성되낟.
 
 ### POJO(Plain Old Java Object) Class
 - 자바 모델이나, 기능, 프레임워크 등에 따르지 않고 독립적이며 단순한 기능만을 가진 객체이다.
