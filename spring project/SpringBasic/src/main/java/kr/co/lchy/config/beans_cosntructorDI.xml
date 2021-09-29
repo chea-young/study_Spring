@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id='obj1' class='kr.co.lchy.beans.TestConstructor01'
+		lazy-init='true' />
+	<bean id="obj2" class="kr.co.lchy.beans.TestConstructor01"
+		lazy-init="true">
+		<constructor-arg value='100'></constructor-arg>
+	</bean>
+	<bean id="obj3" class="kr.co.lchy.beans.TestConstructor01"
+		lazy-init="true">
+		<constructor-arg value='200' type='int'></constructor-arg>
+		<constructor-arg value='10' type='double'></constructor-arg>
+		<constructor-arg value='안녕' type='java.lang.String'></constructor-arg>
+	</bean>
+
+	<bean id="obj4" class="kr.co.lchy.beans.TestConstructor02"
+		lazy-init="true">
+		<constructor-arg>
+			<bean class="kr.co.lchy.beans.DataBean" />
+		</constructor-arg>
+		<constructor-arg>
+			<bean class="kr.co.lchy.beans.DataBean" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="data_bean" class="kr.co.lchy.beans.DataBean"
+		scope='prototype' />
+	<bean id="obj5" class="kr.co.lchy.beans.TestConstructor02"
+		lazy-init="true">
+		<constructor-arg ref='data_bean'>
+		</constructor-arg>
+		<constructor-arg ref='data_bean'>
+		</constructor-arg>
+	</bean>
+
+</beans>
+	
+	

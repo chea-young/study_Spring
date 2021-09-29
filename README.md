@@ -59,6 +59,14 @@ Spring을 공부한 것을 정리하는 Repository
 - JAVA POJO classes: 만들어 놓은 객체이다.
 - 동작: IoC 컨테이너가 Metadata에서 읽어와서 그 정보를 토대로 POJO class를 가지고 객체를 만들어서 그 객체를 사용할 수 있도록 반환한다.
 
+#### POJO(Plain Old Java Object) Class
+- 자바 모델이나, 기능, 프레임워크 등에 따르지 않고 독립적이며 단순한 기능만을 가진 객체이다.
+- 자바에서는 이러한 객체를 Bean라고 부른다.
+#### BeanPostProcessor
+- BeanPostProcessor 인터페이스를 구현한 클래스를 정의하면 Bean 객체를 생성할 때 호출될 init 메서드 호출을 가로채 다른 메서드를 호출 할 수 있도록 할 수 있다.
+- postProcessBeforeInitialization: init-method에 지정된 메서드가 호출되기 전에 호출된다.
+- postProcessAfterInitialization: init-method에 지정된 메서드가 호출된 후에 호출된다.
+
 ### Bean
 - beans : 데이터를 관리하기 위한 목적으로 사용하거나 도구적인 성격을 가지고 있는 method 들을 가지고 있는 Class들을 모아둔다.
     - beans.xml 작성 시 내용
@@ -74,14 +82,9 @@ Spring을 공부한 것을 정리하는 Repository
     - Singleton이고 lazy-init 속성이 true인 경우 getBean 메서드를 사용할 때 객체가 생성된다.
     - Prototype 일 경우 getBean 메서드를 사용할 때 객체가 생성된다.
 
-### POJO(Plain Old Java Object) Class
-- 자바 모델이나, 기능, 프레임워크 등에 따르지 않고 독립적이며 단순한 기능만을 가진 객체이다.
-- 자바에서는 이러한 객체를 Bean라고 부른다.
-
-### BeanPostProcessor
-- BeanPostProcessor 인터페이스를 구현한 클래스를 정의하면 Bean 객체를 생성할 때 호출될 init 메서드 호출을 가로채 다른 메서드를 호출 할 수 있도록 할 수 있다.
-- postProcessBeforeInitialization: init-method에 지정된 메서드가 호출되기 전에 호출된다.
-- postProcessAfterInitialization: init-method에 지정된 메서드가 호출된 후에 호출된다.
+### Dependency Injection
+- Bean 객체를 생성할 때 Bean 객체가 관리할 값이나 객체를 주인하는 것을 의미한다.
+- Bean 객체 생성 후 Bean 객체가 가질 기본 값을 자바 코드로 설정하는 것이 아닌 Bean을 정의하는 xml 코드에서 정의하는 개념이다.
 
 ### A. 자바 프로젝트
 - 문제점
