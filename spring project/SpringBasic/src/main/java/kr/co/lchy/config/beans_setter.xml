@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="t1" class='kr.co.lchy.beans.TestSetter01'>
+		<property name="data1" value="100"></property>
+		<property name="data2" value="2000"></property>
+		<property name="data3" value="true"></property>
+		<property name="data4" value="바보"></property>
+		<property name="data5" ref="data_bean"></property>
+	</bean>
+
+	<bean id="data_bean" class='kr.co.lchy.beans.DataBean_setter' />
+</beans>
+	
+	

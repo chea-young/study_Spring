@@ -2,7 +2,7 @@ package kr.co.lchy.main;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import kr.co.lchy.beans.DataBean;
+import kr.co.lchy.beans.DataBean_setter;
 import kr.co.lchy.beans.TestConstructor01;
 import kr.co.lchy.beans.TestConstructor02;
 
@@ -34,8 +34,8 @@ public class ConstructorDI {
 		obj3.printData();
 		System.out.println("--------------------------------------------------------------------------------");
 		
-		DataBean d1 = new DataBean();
-		DataBean d2 = new DataBean();
+		DataBean_setter d1 = new DataBean_setter();
+		DataBean_setter d2 = new DataBean_setter();
 		TestConstructor02 t200 = new TestConstructor02(d1, d2);
 		t200.printData();
 		System.out.println("--------------------------------------------------------------------------------");
