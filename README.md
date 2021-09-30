@@ -85,6 +85,9 @@ Spring을 공부한 것을 정리하는 Repository
 ### Dependency Injection
 - Bean 객체를 생성할 때 Bean 객체가 관리할 값이나 객체를 주인하는 것을 의미한다.
 - Bean 객체 생성 후 Bean 객체가 가질 기본 값을 자바 코드로 설정하는 것이 아닌 Bean을 정의하는 xml 코드에서 정의하는 개념이다.
+- 컬렉션 주입
+    - Bean을 정의할 때 주입해야 하는 멤버가 컬렉션인 경우 컬렉션이 관리할 객체를 초기에 설정할 수 있다.
+    - List, Map, Set Property를 사용
 
 ### A. 자바 프로젝트
 - 문제점
