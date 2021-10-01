@@ -94,12 +94,21 @@ Spring을 공부한 것을 정리하는 Repository
 ### Annotaion 활용
 - benas.xml 파일에 등록했던 내용을 java 파일에 작성할 수 있다. xml은 값을 정해줘야 하는 반면 java 파일은 코드를 자유롭게 작성할 수 있다.
 #### Annotation 설명
+- 초기화 방법
+```
+AnnotationConfigApplicationContext ctx 
+			= new AnnotationConfigApplicationContext();
+ctx.register(BeanConfig.class);
+ctx.refresh();
+```
 - @Configuration:  현재 자바 파일이 빈 등록을 위한 자바 파일임을 알려준다.
 -  @Bean: bean 객체를 정의할 때 사용한다. 메서드의 이름이 bean의 이름이 된다.
     - @Bean(name=[이름]): bean의 이름을 새롭게 벙의한다.
     - @Lazy: lazy-init 속성을 지정한다.
     - @Scope:  bean의 scope를 설정한다.
     - @Primary: primary 속성을 지정한다.
+- init, destroy 메서드
+    - `@Bean(initMethod = "bean2_init", destroyMethod = "bean2_destroy")`
 
 ### A. 자바 프로젝트
 - 문제점
