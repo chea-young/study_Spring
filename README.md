@@ -120,6 +120,12 @@ ctx.refresh();
     - @Qualifier: @Autowired는 주입 시 같은 타입의 Bean의 여러 개 정의되어 있다면 Qualifier에 설정 되어 있는 bean을 찾아 주입한다.
     - 생성자 주입 @Value: 생성자에 주인 시 참조변수 타입 변수들은 자동으로 주입되고 기본 자료형 및 문자열 값만 주입을 설정해주면 된다.
 
+### Component
+- @Component를 사용하면 Bean Configuration 파일에 Bean을 등록하지 않아도 자동으로 등록된다.
+    - Xml을 이용하는 방식
+        `<context:component-scan base-package="kr.co.softcampus.beans"/>`
+    - Bean Configuration Class 사용
+        `@ComponentScan(basePackages = {"kr.co.softcampus.beans", "kr.co.softcampus.bean2"})`
 ### A. 자바 프로젝트
 - 문제점
     - 자바 프로젝트에서 클래스가 변경되면 객체 생성 부분과 참조 변수 선언 부분 모두를 수정해야 한다.

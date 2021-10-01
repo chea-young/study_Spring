@@ -19,6 +19,7 @@ public class BeanConfigClass_JD {
 
 	@Bean
 	public Test_JD01 java2() {
+
 		Test_JD01 t1 = new Test_JD01();
 		t1.setData1(400);
 		t1.setData2("문자열4");
