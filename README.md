@@ -93,6 +93,7 @@ Spring을 공부한 것을 정리하는 Repository
 
 ### Annotaion 활용
 - benas.xml 파일에 등록했던 내용을 java 파일에 작성할 수 있다. xml은 값을 정해줘야 하는 반면 java 파일은 코드를 자유롭게 작성할 수 있다.
+- Bean 설정 파일에 `<context:annotation-config/>` 코드를 추가하면 빈에 대한 설정을 xml 파일이 아닌 Bean 클래서 Annotation을 검색해 반영하게 된다. 
 #### Annotation 설명
 - 초기화 방법
 ```
@@ -113,6 +114,11 @@ ctx.refresh();
     - `@Bean(autowire = 주입방식)`: 자동 주입 방식을 설정한다.
     - `Autowire.BY_NAME `: 이름을 통한 자동 주입이다.
     - `Autowire.BY_TYPE `: 타입을 통한 자동 주입이다.
+- Bean 설정
+    - @Required: 반드시 주인 해야 할 프로퍼티로 설정한다.
+    - @Autowired: 객체 타입을 통해 bean 객체를 자동으로 주입한다.
+    - @Qualifier: @Autowired는 주입 시 같은 타입의 Bean의 여러 개 정의되어 있다면 Qualifier에 설정 되어 있는 bean을 찾아 주입한다.
+    - 생성자 주입 @Value: 생성자에 주인 시 참조변수 타입 변수들은 자동으로 주입되고 기본 자료형 및 문자열 값만 주입을 설정해주면 된다.
 
 ### A. 자바 프로젝트
 - 문제점
