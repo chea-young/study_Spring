@@ -109,6 +109,10 @@ ctx.refresh();
     - @Primary: primary 속성을 지정한다.
 - init, destroy 메서드
     - `@Bean(initMethod = "bean2_init", destroyMethod = "bean2_destroy")`
+- 자동 주입
+    - `@Bean(autowire = 주입방식)`: 자동 주입 방식을 설정한다.
+    - `Autowire.BY_NAME `: 이름을 통한 자동 주입이다.
+    - `Autowire.BY_TYPE `: 타입을 통한 자동 주입이다.
 
 ### A. 자바 프로젝트
 - 문제점

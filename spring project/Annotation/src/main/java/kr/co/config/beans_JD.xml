@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id='xml1' class='kr.co.lchy.beans.Test_JD01'
+		lazy-init='true'>
+		<constructor-arg value='100' type='int' index='0'></constructor-arg>
+		<constructor-arg value='문자열1' index='1'></constructor-arg>
+		<constructor-arg ref='data_bean1' index='2'></constructor-arg>
+	</bean>
+	<bean id='xml2' class='kr.co.lchy.beans.Test_JD01'
+		lazy-init='true'>
+		<constructor-arg name ="data1" value='200' ></constructor-arg>
+		<constructor-arg name="data2" value='문자열3' ></constructor-arg>
+		<constructor-arg name="data3" ref='data_bean1' ></constructor-arg>
+	</bean>
+
+	<bean id="data_bean1" class="kr.co.lchy.beans.DataBean_JD01"></bean>
+	
+	<bean id="data1" class="kr.co.lchy.beans.DataBean_JD02"></bean>
+	<bean id="data2" class="kr.co.lchy.beans.DataBean_JD02"></bean>
+	
+	<bean id="xml3" class="kr.co.lchy.beans.DataBean_JD02"  lazy-init="true"></bean>
+
+</beans>
+	
+	
