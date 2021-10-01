@@ -164,6 +164,21 @@ ctx.refresh();
 			</exclusions>
 			<scope>runtime</scope>
 ```
+AOP(Aspect Oriented Programming)(관심 지향 프로그래밍) [라이브러리 다운 필요!!]
+- 로깅, 감사, 선언적 트랜젝션, 보안, 캐싱 등 다양한 곳에서 사용되고 있다.
+- 용어
+    - Joint Point: 모듈이 삽입되어 동작하게 되는 특정 위치(메서드 호출 등)이다.
+    - Point Cut: 다양한 Joint Point 중에 어떤 것을 사용할지 선택한다.
+    - Advice: Joint Point에 삽입되어 동작할 수 있는 코드이다.
+        - before: 메서드 호출 전에 동작하는 Advice이다.
+        - after-returning: 예외 없이 호출된 메서드의 동작이 완료되면 동작하는 Advice이다.
+        - after-throwing: 호출된 메서드 동작 중 예외가 발생했을 때 동작하는 Advice이다.
+        - after: 예외 발생 여부에 관계없이 호출된 메서드의 동작이 완료되며 동작하는 Advice이다.
+        - around: 메서드 호출 전과 후에 동작하는 Advice이다.
+    - Weaving: Advice를 핵심 로직 코드에 적용하는 것이다.
+    - Aspect: Point Cut + Advice 
+- 동작
+    - AOP 개념이 적용이되서 동작할 코드들이 Adivce이고 메서드 호출을 관심사에 등록해 놓으면 Joint Point가 된다. 이 메서드 호출이 동작을 할 때 모듈 들을 연결을 해서 동작시키도록 설정하는 것은 Point Cut이다. 호출된 메서드에 전 혹은 후에 동작할 코드를 삽입해서 하나의 동작으로 만드는 행위가 Weaving이다.
 
 #### Eclipse 단축키
 - ctrl + Shift +/ : 주석

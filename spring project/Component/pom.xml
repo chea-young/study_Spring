@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>kr.co.lchy</groupId>
-  <artifactId>Component</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>kr.co.lchy</groupId>
+	<artifactId>Component</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
 	<!-- xml에서 사용할 속성들 -->
 	<properties>
 		<!-- 자바 버전 -->
@@ -16,6 +18,7 @@
 		<org.slf4j-version>1.7.32</org.slf4j-version>
 		<!-- logback 버전 -->
 		<ch.qos.logback>1.2.6</ch.qos.logback>
+		<org.aspectj-version>1.9.7</org.aspectj-version>
 	</properties>
 
 	<dependencies>
@@ -49,9 +52,16 @@
 				</exclusion>
 			</exclusions>
 			<scope>runtime</scope>
-
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
+
+
 	</dependencies>
-  
-  
+
+
 </project>
