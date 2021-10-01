@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import kr.co.lchy.beans.TestAutowire01;
 
-public class AutoWrire {
+public class AutoWire {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("kr/co/lchy/config/beans_AutoWire.xml");
