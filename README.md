@@ -126,6 +126,11 @@ ctx.refresh();
         `<context:component-scan base-package="kr.co.softcampus.beans"/>`
     - Bean Configuration Class 사용
         `@ComponentScan(basePackages = {"kr.co.softcampus.beans", "kr.co.softcampus.bean2"})`
+- Component Bean 기본 설정
+    - @Component("이름"): 설정한 이름으로 Bean 객체를 가져온다.
+    - @Lazy: getBean 메서드를 호출할 때 객체가 생성된다.
+    - @Scope("prototype"): Prototype으로 설정한다.
+    - @PostConstruct, @PreDestroy: 생성자 호출 이후 자동으로 호출될 메서드와 객체가 소멸될 떄 자동으로 호출되는 메서드를 등록된다.
 ### A. 자바 프로젝트
 - 문제점
     - 자바 프로젝트에서 클래스가 변경되면 객체 생성 부분과 참조 변수 선언 부분 모두를 수정해야 한다.
