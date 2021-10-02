@@ -9,9 +9,9 @@ public class AOPXML {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("kr/co/lchy/config/bean_AX.xml");
 		TestAX bean1 = ctx.getBean("xml1", TestAX.class);
 		bean1.method1();
-		
+
 		ctx.close();
-		
+
 	}
 
 }
