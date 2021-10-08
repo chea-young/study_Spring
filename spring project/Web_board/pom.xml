@@ -19,6 +19,7 @@
 		<!-- logback 버전 -->
 		<ch.qos.logback-version>1.2.6</ch.qos.logback-version>
 		<org.aspectj-version>1.9.7</org.aspectj-version>
+		<org.springframework-version>5.1.5.RELEASE</org.springframework-version>
 	</properties>
 
 	<dependencies>
@@ -58,6 +59,11 @@
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>${org.aspectj-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
 		</dependency>
 
 
