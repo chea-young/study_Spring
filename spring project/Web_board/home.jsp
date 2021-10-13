@@ -64,7 +64,7 @@ ul li a:hover {
 <br>
 <div style="text-align: right; color: #D9418C;">
 	<c:choose>
-		<c:when test="${sessionScope.userid==null }">
+		<c:when test="${session.Scope.userid==null }">
 			<a style="color: #D9418C" href="login.do">login</a>
 			<a style="color: #D9418C" href="join.do">join</a>
 		</c:when>
@@ -78,7 +78,7 @@ ul li a:hover {
 <header>
 	<h1 class="text-center">
 		<a href="home.do"><img
-			src="<c:url value="/resource/user/lchy.png"/>"></a>
+			src="<c:url value="/resources/user/lchy.png"/>"></a>
 	</h1>
 </header>
 
