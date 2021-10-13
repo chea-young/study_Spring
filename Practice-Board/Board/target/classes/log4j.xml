@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.toay.lchy">
+	<logger name="com.kr.lchy">
 		<level value="info" />
 	</logger>
 	
