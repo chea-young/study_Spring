@@ -16,6 +16,7 @@
 	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -25,5 +26,23 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpclient5-5.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpclient5-cache-5.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpclient5-fluent-5.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpclient5-testing-5.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpclient5-win-5.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpcore5-5.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpcore5-h2-5.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpcore5-reactive-5.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/httpcore5-testing-5.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/jna-5.2.0.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/jna-platform-5.2.0.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/rxjava-2.2.8.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/이채영/DevFile/spring-library/log4j-1.2-api-2.14.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
