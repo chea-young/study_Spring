@@ -22,10 +22,23 @@
 	<!-- -->
 
 	<!-- Application Loggers -->
-	<logger name="com" additivity="false">
+	<logger name="tody" additivity="false">
 		<level value="debug" />
 		<appender-ref ref="console" />
 	</logger>
+
+	<!-- *추가* -->
+	<!-- Query Loggers -->
+	<logger name="jdbc.sqlonly" additivity="false">
+		<level value="info" />
+		<appender-ref ref="console-infolog" />
+	</logger>
+
+	<logger name="jdbc.resultsettable" additivity="false">
+		<level value="info" />
+		<appender-ref ref="console" />
+	</logger>
+	<!-- -->
 
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
