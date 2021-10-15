@@ -13,6 +13,7 @@ Spring을 공부한 것을 정리하는 Repository
 6. Java -> 1.8 -> Apply
 
 ## Spring Framework
+- 기능이 구현되는 순서: Controller -> Service -> ServiceImp -> DAO -> SQL(XML) -> JSP
 - 가장 많이 사용하는 Java 기반 응용 프로그램 개발 프레임워크
 - 모든 Java 애플리케이션 개발에 이용할 수 있으며 Java EE 위의 웹 애플리케이션 개발에 주로 사용되고 있다.
 - 정부 표준 프레임 워크도 마찬가지이다. 

@@ -12,7 +12,7 @@
 		<interceptor>
 			<mapping path="/**" />
 			<beans:bean id="commonInterceptor"
-				class="tody.lovely.common.interceptor.CommonInterceptor" />
+				class="com.kr.common.interceptor.CommonInterceptor" />
 		</interceptor>
 	</interceptors>
 
