@@ -1,4 +1,4 @@
-# study_Spring
+# study_SpringFramework
 Spring을 공부한 것을 정리하는 Repository
 - Spring Framework 버전 5를 중심으로 수업하지만 버전 4에서 테스트가 완료된 상태이다.
 - 윤재성의 Spring Framework 개발자를 위한 실습을 통한 입문 과정
